@@ -1,0 +1,17 @@
+//counting the no of vowels in a string//
+class main{           
+ public static void main(String[] args) {
+        String a="pratiksha";
+        System.out.println(countofvowels(a));
+    }
+    static int countofvowels(String str){
+        int count=0;
+        for (int i = 0; i < str.length(); i++) {
+            char ch = str.charAt(i);
+            if (ch=='a'||ch=='e'||ch=='i'||ch=='o'||ch=='u'){
+                count++;
+            }
+        }
+        return count;
+    }
+}
