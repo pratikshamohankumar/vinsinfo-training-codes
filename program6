@@ -1,0 +1,24 @@
+//Sum of First N Natural Numbers//
+class main{            
+    public static void main(String[] args) {
+        int num=5;
+        System.out.println(sumofnaturalnum (num));
+    }
+    static int sumofnaturalnum (int n){
+        int sum=0;
+        for(int i=0;i<=n;i++)
+        sum +=i;
+        return sum;
+    }
+}
+
+//2 method//
+class main{            
+    public static void main(String[] args) {
+        int num=5;
+        System.out.println(sumofnaturalnum (num));
+    }
+    static int sumofnaturalnum (int n){
+        return n*(n+1)/2;
+    }
+}
