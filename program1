@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+            Scanner sc=new Scanner(System.in);
+           
+            System.out.print("enter the size of the Array:");
+            int n=sc.nextInt();
+            int[] arr2=new int[n];
+           
+            System.out.print("enter the Array element:");
+            for(int i=0;i<n;i++) {
+                arr2[i]=sc.nextInt();
+            }
+            System.out.println(Findthehighest(arr2));
+    }
+    static int Findthehighest (int[] arr) {
+        int max=0;
+        for(int i=0;i<arr.lenght;i++)
+            if (arr[i]>max)
+            max=arr[i];
+            return max;
+        }
+       
+    }
