@@ -15,3 +15,21 @@ class main{
         return count;
     }
 }
+
+
+//2 method//
+class main{            
+    public static void main(String[] args) {
+        String a="pratiksha";
+        System.out.println(countofvowels(a));
+    }
+    static int countofvowels(String str){
+        int count=0;
+       for (int i = 0; i < str.length(); i++) {
+            if ("aeiou".contains (str.charAt(i)+"")){
+                count++;
+            }
+        }
+        return count;
+    }
+}
